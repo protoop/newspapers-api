@@ -1,0 +1,13 @@
+"use strict";
+
+var config = {};
+
+config.web = {};
+config.web.port = 5434;
+
+config.database = {};
+config.database.sqlite_3_db_path     = "./data/";
+config.database.sqlite_3_db_filename = "newspapers.db";
+config.database.sql_default_limit = 10; // default # of articles returned by an SQL query
+
+module.exports = config;

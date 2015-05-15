@@ -1,0 +1,17 @@
+{
+  "name": "newspapers-api",
+  "main": "newspapers-api-server.js",
+  "description": "API to get records from the Newspapers SQLite3 DB.",
+  "version": "1.0.0",
+  "author": {
+    "name": "protoop"
+  },
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.3",
+    "forever": "^0.14.1",
+    "lodash": "^3.8.0",
+    "morgan": "^1.5.3",
+    "sqlite3": "^3.0.8"
+  }
+}
