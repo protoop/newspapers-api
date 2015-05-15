@@ -16,7 +16,12 @@ For ensuring that the node server will run continuously, you should then install
 
     $ npm install forever -g
 
-2) Run the server :
+2) Configuration :
+
+* Rename `app/config.js.sample` to `app/config.js`.
+* Open up the `app/config.js` file and change the config.
+
+3) Run the server :
 
 To run the server simply run :
 
