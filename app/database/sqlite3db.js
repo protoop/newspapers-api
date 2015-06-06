@@ -3,14 +3,13 @@
 var fs      = require('fs');
 var path    = require('path');
 var sqlite3 = require('sqlite3').verbose();
-var config  = require('./config');
+var config  = require('../config');
 
 var db, path_stat, file_stat;
 
 exports.db = function() {
     if (db == null) {
         var file = path.join( path.normalize(config.database.sqlite_3_db_path) , config.database.sqlite_3_db_filename );
-        var exists = fs.existsSync(file);
         try {
             path_stat = fs.lstatSync(config.database.sqlite_3_db_path);
             file_stat = fs.lstatSync(file);
